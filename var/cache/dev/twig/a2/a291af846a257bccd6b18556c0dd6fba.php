@@ -62,10 +62,7 @@ class __TwigTemplate_2c37e10738b1c9f42214e8f2ca2b5664 extends Template
         echo "\">Accueil</a>
         </li>
         <li class=\"nav-item\">
-          <a class=\"nav-link\" aria-current=\"page\" href=\"";
-        // line 17
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_products");
-        echo "\">Produits</a>
+
         </li>
       </ul>
 
@@ -118,7 +115,7 @@ class __TwigTemplate_2c37e10738b1c9f42214e8f2ca2b5664 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  67 => 17,  61 => 14,  47 => 3,  43 => 1,);
+        return array (  61 => 14,  47 => 3,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -139,7 +136,7 @@ class __TwigTemplate_2c37e10738b1c9f42214e8f2ca2b5664 extends Template
           <a class=\"nav-link\" aria-current=\"page\" href=\"{{path('app_home')}}\">Accueil</a>
         </li>
         <li class=\"nav-item\">
-          <a class=\"nav-link\" aria-current=\"page\" href=\"{{path('app_products')}}\">Produits</a>
+
         </li>
       </ul>
 
@@ -162,6 +159,6 @@ class __TwigTemplate_2c37e10738b1c9f42214e8f2ca2b5664 extends Template
       </ul>
     </div>
   </div>
-</nav>", "partials/_nav.html.twig", "C:\\Users\\utilisateur\\Downloads\\symfony\\HeroHideout\\templates\\partials\\_nav.html.twig");
+</nav>", "partials/_nav.html.twig", "C:\\Users\\utilisateur\\Desktop\\projetGroupe3\\hero_hideout\\templates\\partials\\_nav.html.twig");
     }
 }
