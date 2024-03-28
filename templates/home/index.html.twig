@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil
+{% endblock %}
+
+{% block body %}
+	<main>
+
+<div class="card text-start m-5 p-4 border-1 border-secondary">
+    <div class="card-body text-center">
+        <h2 class="card-title">Bienvenue sur Hero Hideout!</h2>
+    <a class="btn btn-grad" href="{{path('app_products')}}">Voir les produits</a>
+    </div>
+</div>
+<div class="d-flex justify-content-center"><iframe width="560" class="pb-5" height="315" src="https://www.youtube.com/embed/mqqft2x_Aa4?si=ONCNuVkkJGauuMZq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></div>
+
+	</main>
+{% endblock %}

@@ -1,0 +1,81 @@
+/* CSS VA ICI */
+
+nav{
+    height:80px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+nav a,li{
+   font-size: 21px;;
+}
+
+footer{
+    background:#f17312;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px 3px 0px inset;
+}
+
+.navbar-scroll .nav-link,
+.navbar-scroll .fa-bars,
+.navbar-scroll .navar-brand {
+    color: #4f4f4f;
+}
+
+.navbar-scroll .nav-link:hover {
+    color: #f19812;
+}
+
+.navbar-scrolled .nav-link,
+.navbar-scrolled .fa-bars,
+.navbar-scrolled .navar-brand {
+    color: #4f4f4f;
+}
+
+.navbar-scroll,
+.navbar-scrolled {
+    background-color: #fff;
+}
+
+.navbar.navbar-scroll.navbar-scrolled {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+body {
+    background-color: #eee;
+    background-image:url('https://static.vecteezy.com/system/resources/previews/003/212/233/non_2x/abstract-orange-curved-and-wave-on-white-background-free-vector.jpg');
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    font-family: 'Theano Modern', sans-serif;
+}
+
+main{
+    height:500px;
+    width:100%;
+    margin-top:100px;
+}
+
+.card{
+    border-radius: 35px 35px 35px;
+}
+
+         
+.btn-grad {
+    background-image: linear-gradient(to right, #FF8008 0%, #FFC837  51%, #FF8008  100%);
+    margin: 10px;
+    padding: 10px 15px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+  }
+
+  .btn-grad:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+  }
+ 

@@ -60,22 +60,23 @@ class __TwigTemplate_01eb40a8dcb49e3e040fea28489d1c02 extends Template
         $this->displayBlock('stylesheets', $context, $blocks);
         // line 10
         echo "\t\t<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css\">
+\t\t<link href=\"https://fonts.cdnfonts.com/css/theano-modern\" rel=\"stylesheet\">
 \t\t";
-        // line 11
+        // line 12
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 16
+        // line 17
         echo "\t</head>
 \t<body>
 \t\t";
-        // line 18
-        $this->loadTemplate("partials/_nav.html.twig", "base.html.twig", 18)->display($context);
         // line 19
-        echo "\t\t";
-        $this->displayBlock('body', $context, $blocks);
+        $this->loadTemplate("partials/_nav.html.twig", "base.html.twig", 19)->display($context);
         // line 20
         echo "\t\t";
-        $this->loadTemplate("partials/_footer.html.twig", "base.html.twig", 20)->display($context);
+        $this->displayBlock('body', $context, $blocks);
         // line 21
+        echo "\t\t";
+        $this->loadTemplate("partials/_footer.html.twig", "base.html.twig", 21)->display($context);
+        // line 22
         echo "\t</body>
 </html>
 ";
@@ -125,7 +126,7 @@ class __TwigTemplate_01eb40a8dcb49e3e040fea28489d1c02 extends Template
 
     }
 
-    // line 11
+    // line 12
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -135,10 +136,10 @@ class __TwigTemplate_01eb40a8dcb49e3e040fea28489d1c02 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 12
+        // line 13
         echo "\t\t\t";
         $this->displayBlock('importmap', $context, $blocks);
-        // line 15
+        // line 16
         echo "\t\t";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -148,7 +149,7 @@ class __TwigTemplate_01eb40a8dcb49e3e040fea28489d1c02 extends Template
 
     }
 
-    // line 12
+    // line 13
     public function block_importmap($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -158,7 +159,7 @@ class __TwigTemplate_01eb40a8dcb49e3e040fea28489d1c02 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "importmap"));
 
-        // line 13
+        // line 14
         echo "\t\t\t\t";
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Extension\ImportMapRuntime')->importmap("app");
         echo "
@@ -171,7 +172,7 @@ class __TwigTemplate_01eb40a8dcb49e3e040fea28489d1c02 extends Template
 
     }
 
-    // line 19
+    // line 20
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -210,7 +211,7 @@ class __TwigTemplate_01eb40a8dcb49e3e040fea28489d1c02 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  175 => 19,  162 => 13,  152 => 12,  142 => 15,  139 => 12,  129 => 11,  111 => 9,  91 => 6,  79 => 21,  76 => 20,  73 => 19,  71 => 18,  67 => 16,  65 => 11,  62 => 10,  60 => 9,  57 => 8,  55 => 6,  48 => 1,);
+        return array (  176 => 20,  163 => 14,  153 => 13,  143 => 16,  140 => 13,  130 => 12,  112 => 9,  92 => 6,  80 => 22,  77 => 21,  74 => 20,  72 => 19,  68 => 17,  66 => 12,  62 => 10,  60 => 9,  57 => 8,  55 => 6,  48 => 1,);
     }
 
     public function getSourceContext()
@@ -225,6 +226,7 @@ class __TwigTemplate_01eb40a8dcb49e3e040fea28489d1c02 extends Template
 \t\t</title>
 \t\t<link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>\"> {% block stylesheets %}{% endblock %}
 \t\t<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css\">
+\t\t<link href=\"https://fonts.cdnfonts.com/css/theano-modern\" rel=\"stylesheet\">
 \t\t{% block javascripts %}
 \t\t\t{% block importmap %}
 \t\t\t\t{{ importmap('app') }}
