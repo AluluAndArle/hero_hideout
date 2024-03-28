@@ -53,17 +53,31 @@ main{
     height:500px;
     width:100%;
     margin-top:100px;
+    text-align:center;
 }
 
 .card{
     border-radius: 35px 35px 35px;
 }
 
+.marginLeft{
+    margin-left:330px;
+}
+
+.cardHover{
+    transition: 0.4s ease-in;
+}
+
+.cardHover:hover{
+    transform:scale(1.05);
+    transition: 0.4s ease-out;
+}
+         
          
 .btn-grad {
-    background-image: linear-gradient(to right, #FF8008 0%, #FFC837  51%, #FF8008  100%);
+    background-image: linear-gradient(to right, #FF4E50 0%, #F9D423  51%, #FF4E50  100%);
     margin: 10px;
-    padding: 10px 15px;
+    padding: 5px 10px;
     text-align: center;
     text-transform: uppercase;
     transition: 0.5s;

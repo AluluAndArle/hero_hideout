@@ -91,7 +91,10 @@ class __TwigTemplate_7bb471276db2195910c091e056b84c80 extends Template
 <div class=\"card text-start m-5 p-4 border-1 border-secondary\">
     <div class=\"card-body text-center\">
         <h2 class=\"card-title\">Bienvenue sur Hero Hideout!</h2>
-    
+    <a class=\"btn btn-grad\" href=\"";
+        // line 12
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_product");
+        echo "\">Voir les produits</a>
     </div>
 </div>
 <div class=\"d-flex justify-content-center\"><iframe width=\"560\" class=\"pb-5\" height=\"315\" src=\"https://www.youtube.com/embed/mqqft2x_Aa4?si=ONCNuVkkJGauuMZq\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe></div>
@@ -127,7 +130,7 @@ class __TwigTemplate_7bb471276db2195910c091e056b84c80 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
+        return array (  96 => 12,  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -143,13 +146,13 @@ class __TwigTemplate_7bb471276db2195910c091e056b84c80 extends Template
 <div class=\"card text-start m-5 p-4 border-1 border-secondary\">
     <div class=\"card-body text-center\">
         <h2 class=\"card-title\">Bienvenue sur Hero Hideout!</h2>
-    
+    <a class=\"btn btn-grad\" href=\"{{path('app_product')}}\">Voir les produits</a>
     </div>
 </div>
 <div class=\"d-flex justify-content-center\"><iframe width=\"560\" class=\"pb-5\" height=\"315\" src=\"https://www.youtube.com/embed/mqqft2x_Aa4?si=ONCNuVkkJGauuMZq\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" referrerpolicy=\"strict-origin-when-cross-origin\" allowfullscreen></iframe></div>
 
 \t</main>
 {% endblock %}
-", "home/index.html.twig", "C:\\Users\\utilisateur\\Desktop\\projetGroupe3\\hero_hideout\\templates\\home\\index.html.twig");
+", "home/index.html.twig", "C:\\Users\\utilisateur\\Downloads\\hero_hideout\\templates\\home\\index.html.twig");
     }
 }

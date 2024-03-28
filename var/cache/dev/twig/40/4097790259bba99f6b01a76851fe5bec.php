@@ -61,22 +61,23 @@ class __TwigTemplate_01eb40a8dcb49e3e040fea28489d1c02 extends Template
         // line 10
         echo "\t\t<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css\">
 \t\t<link href=\"https://fonts.cdnfonts.com/css/theano-modern\" rel=\"stylesheet\">
+\t\t<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css\" integrity=\"sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==\" crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\" />
 \t\t";
-        // line 12
+        // line 13
         $this->displayBlock('javascripts', $context, $blocks);
-        // line 17
+        // line 18
         echo "\t</head>
 \t<body>
 \t\t";
-        // line 19
-        $this->loadTemplate("partials/_nav.html.twig", "base.html.twig", 19)->display($context);
         // line 20
-        echo "\t\t";
-        $this->displayBlock('body', $context, $blocks);
+        $this->loadTemplate("partials/_nav.html.twig", "base.html.twig", 20)->display($context);
         // line 21
         echo "\t\t";
-        $this->loadTemplate("partials/_footer.html.twig", "base.html.twig", 21)->display($context);
+        $this->displayBlock('body', $context, $blocks);
         // line 22
+        echo "\t\t";
+        $this->loadTemplate("partials/_footer.html.twig", "base.html.twig", 22)->display($context);
+        // line 23
         echo "\t</body>
 </html>
 ";
@@ -126,7 +127,7 @@ class __TwigTemplate_01eb40a8dcb49e3e040fea28489d1c02 extends Template
 
     }
 
-    // line 12
+    // line 13
     public function block_javascripts($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -136,10 +137,10 @@ class __TwigTemplate_01eb40a8dcb49e3e040fea28489d1c02 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "javascripts"));
 
-        // line 13
+        // line 14
         echo "\t\t\t";
         $this->displayBlock('importmap', $context, $blocks);
-        // line 16
+        // line 17
         echo "\t\t";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -149,7 +150,7 @@ class __TwigTemplate_01eb40a8dcb49e3e040fea28489d1c02 extends Template
 
     }
 
-    // line 13
+    // line 14
     public function block_importmap($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -159,7 +160,7 @@ class __TwigTemplate_01eb40a8dcb49e3e040fea28489d1c02 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "importmap"));
 
-        // line 14
+        // line 15
         echo "\t\t\t\t";
         echo $this->env->getRuntime('Symfony\Bridge\Twig\Extension\ImportMapRuntime')->importmap("app");
         echo "
@@ -172,7 +173,7 @@ class __TwigTemplate_01eb40a8dcb49e3e040fea28489d1c02 extends Template
 
     }
 
-    // line 20
+    // line 21
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -211,7 +212,7 @@ class __TwigTemplate_01eb40a8dcb49e3e040fea28489d1c02 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  176 => 20,  163 => 14,  153 => 13,  143 => 16,  140 => 13,  130 => 12,  112 => 9,  92 => 6,  80 => 22,  77 => 21,  74 => 20,  72 => 19,  68 => 17,  66 => 12,  62 => 10,  60 => 9,  57 => 8,  55 => 6,  48 => 1,);
+        return array (  177 => 21,  164 => 15,  154 => 14,  144 => 17,  141 => 14,  131 => 13,  113 => 9,  93 => 6,  81 => 23,  78 => 22,  75 => 21,  73 => 20,  69 => 18,  67 => 13,  62 => 10,  60 => 9,  57 => 8,  55 => 6,  48 => 1,);
     }
 
     public function getSourceContext()
@@ -227,6 +228,7 @@ class __TwigTemplate_01eb40a8dcb49e3e040fea28489d1c02 extends Template
 \t\t<link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>\"> {% block stylesheets %}{% endblock %}
 \t\t<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css\">
 \t\t<link href=\"https://fonts.cdnfonts.com/css/theano-modern\" rel=\"stylesheet\">
+\t\t<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css\" integrity=\"sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==\" crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\" />
 \t\t{% block javascripts %}
 \t\t\t{% block importmap %}
 \t\t\t\t{{ importmap('app') }}
@@ -239,6 +241,6 @@ class __TwigTemplate_01eb40a8dcb49e3e040fea28489d1c02 extends Template
 \t\t{% include \"partials/_footer.html.twig\" %}
 \t</body>
 </html>
-", "base.html.twig", "C:\\Users\\utilisateur\\Desktop\\projetGroupe3\\hero_hideout\\templates\\base.html.twig");
+", "base.html.twig", "C:\\Users\\utilisateur\\Downloads\\hero_hideout\\templates\\base.html.twig");
     }
 }

@@ -52,19 +52,16 @@ class __TwigTemplate_538c58d6414d90797f5c7e6bb9dc6830 extends Template
         echo "\" class=\"text-white\">Accueil</a>
             </h6>
           </div>
-
           <div class=\"col-md-2\">
             <h6 class=\"text-uppercase font-weight-bold\">
-
+              <a href=\"#!\" class=\"text-white\">Produits</a>
             </h6>
           </div>
-
           <div class=\"col-md-2\">
             <h6 class=\"text-uppercase font-weight-bold\">
               <a href=\"#!\" class=\"text-white\">Mentions</a>
             </h6>
           </div>
-
 
         </div>
       </section>
@@ -85,22 +82,7 @@ class __TwigTemplate_538c58d6414d90797f5c7e6bb9dc6830 extends Template
       </section>
 
       <section class=\"text-center mb-5\">
-        <a href=\"\" class=\"text-white me-4\">
-          <i class=\"fab fa-facebook-f\"></i>
-        </a>
-        <a href=\"\" class=\"text-white me-4\">
-          <i class=\"fab fa-twitter\"></i>
-        </a>
-        <a href=\"\" class=\"text-white me-4\">
-          <i class=\"fab fa-google\"></i>
-        </a>
-        <a href=\"\" class=\"text-white me-4\">
-          <i class=\"fab fa-instagram\"></i>
-        </a>
-        <a href=\"\" class=\"text-white me-4\">
-          <i class=\"fab fa-linkedin\"></i>
-        </a>
-        <a href=\"\" class=\"text-white me-4\">
+        <a href=\"https://github.com/AluluAndArle/hero_hideout\" class=\"text-white me-4\">
           <i class=\"fab fa-github\"></i>
         </a>
       </section>
@@ -159,19 +141,16 @@ class __TwigTemplate_538c58d6414d90797f5c7e6bb9dc6830 extends Template
               <a href=\"{{path('app_home')}}\" class=\"text-white\">Accueil</a>
             </h6>
           </div>
-
           <div class=\"col-md-2\">
             <h6 class=\"text-uppercase font-weight-bold\">
-
+              <a href=\"#!\" class=\"text-white\">Produits</a>
             </h6>
           </div>
-
           <div class=\"col-md-2\">
             <h6 class=\"text-uppercase font-weight-bold\">
               <a href=\"#!\" class=\"text-white\">Mentions</a>
             </h6>
           </div>
-
 
         </div>
       </section>
@@ -192,22 +171,7 @@ class __TwigTemplate_538c58d6414d90797f5c7e6bb9dc6830 extends Template
       </section>
 
       <section class=\"text-center mb-5\">
-        <a href=\"\" class=\"text-white me-4\">
-          <i class=\"fab fa-facebook-f\"></i>
-        </a>
-        <a href=\"\" class=\"text-white me-4\">
-          <i class=\"fab fa-twitter\"></i>
-        </a>
-        <a href=\"\" class=\"text-white me-4\">
-          <i class=\"fab fa-google\"></i>
-        </a>
-        <a href=\"\" class=\"text-white me-4\">
-          <i class=\"fab fa-instagram\"></i>
-        </a>
-        <a href=\"\" class=\"text-white me-4\">
-          <i class=\"fab fa-linkedin\"></i>
-        </a>
-        <a href=\"\" class=\"text-white me-4\">
+        <a href=\"https://github.com/AluluAndArle/hero_hideout\" class=\"text-white me-4\">
           <i class=\"fab fa-github\"></i>
         </a>
       </section>
@@ -222,6 +186,6 @@ class __TwigTemplate_538c58d6414d90797f5c7e6bb9dc6830 extends Template
          >Hero-Hideout</a
         >
     </div>
-  </footer>", "partials/_footer.html.twig", "C:\\Users\\utilisateur\\Desktop\\projetGroupe3\\hero_hideout\\templates\\partials\\_footer.html.twig");
+  </footer>", "partials/_footer.html.twig", "C:\\Users\\utilisateur\\Downloads\\hero_hideout\\templates\\partials\\_footer.html.twig");
     }
 }

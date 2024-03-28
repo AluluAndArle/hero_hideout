@@ -85,80 +85,86 @@ class __TwigTemplate_5f92768048e7a9fcd6f3076f09e2c17a extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
         // line 6
-        echo "    <h1>Product index</h1>
+        echo "<main class=\"container\">
+    <h1 class=\"text-center mb-4\">Gestion des produits</h1>
 
-    <table class=\"table\">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Title</th>
-                <th>Description</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        ";
-        // line 20
+    <div class=\"table-responsive\">
+        <table class=\"table table-bordered table-striped\">
+
+            <thead class=\"thead-dark\">
+
+                <tr>
+                    <th scope=\"col\">ID</th>
+                    <th scope=\"col\">Titre</th>
+                    <th scope=\"col\">Description</th>
+                    <th scope=\"col\">Prix</th>
+                    <th scope=\"col\">Quantité</th>
+                    <th scope=\"col\">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            ";
+        // line 24
         $context['_parent'] = $context;
-        $context['_seq'] = twig_ensure_traversable((isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 20, $this->source); })()));
+        $context['_seq'] = twig_ensure_traversable((isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 24, $this->source); })()));
         $context['_iterated'] = false;
         foreach ($context['_seq'] as $context["_key"] => $context["product"]) {
-            // line 21
-            echo "            <tr>
-                <td>";
-            // line 22
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id", [], "any", false, false, false, 22), "html", null, true);
-            echo "</td>
-                <td>";
-            // line 23
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "title", [], "any", false, false, false, 23), "html", null, true);
-            echo "</td>
-                <td>";
-            // line 24
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "description", [], "any", false, false, false, 24), "html", null, true);
-            echo "</td>
-                <td>";
             // line 25
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "price", [], "any", false, false, false, 25), "html", null, true);
-            echo "</td>
-                <td>";
+            echo "                <tr>
+                    <td>";
             // line 26
-            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "quantity", [], "any", false, false, false, 26), "html", null, true);
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id", [], "any", false, false, false, 26), "html", null, true);
             echo "</td>
-                <td>
-                    <a href=\"";
+                    <td>";
+            // line 27
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "title", [], "any", false, false, false, 27), "html", null, true);
+            echo "</td>
+                    <td>";
             // line 28
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_product_show", ["id" => twig_get_attribute($this->env, $this->source, $context["product"], "id", [], "any", false, false, false, 28)]), "html", null, true);
-            echo "\">show</a>
-                    <a href=\"";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "description", [], "any", false, false, false, 28), "html", null, true);
+            echo "</td>
+                    <td>";
             // line 29
-            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_product_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["product"], "id", [], "any", false, false, false, 29)]), "html", null, true);
-            echo "\">edit</a>
-                </td>
-            </tr>
-        ";
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "price", [], "any", false, false, false, 29), "html", null, true);
+            echo "</td>
+                    <td>";
+            // line 30
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "quantity", [], "any", false, false, false, 30), "html", null, true);
+            echo "</td>
+                    <td>
+                        <a class=\"btn btn-grad btn-sm\" href=\"";
+            // line 32
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_product_show", ["id" => twig_get_attribute($this->env, $this->source, $context["product"], "id", [], "any", false, false, false, 32)]), "html", null, true);
+            echo "\">Voir</a>
+                        <a class=\"btn btn-grad btn-sm\" href=\"";
+            // line 33
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_product_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["product"], "id", [], "any", false, false, false, 33)]), "html", null, true);
+            echo "\">Modifier</a>
+                    </td>
+                </tr>
+            ";
             $context['_iterated'] = true;
         }
         if (!$context['_iterated']) {
-            // line 33
-            echo "            <tr>
-                <td colspan=\"6\">no records found</td>
-            </tr>
-        ";
+            // line 37
+            echo "                <tr>
+                    <td colspan=\"6\" class=\"text-center\">Aucun enregistrement trouvé</td>
+                </tr>
+            ";
         }
         $_parent = $context['_parent'];
         unset($context['_seq'], $context['_iterated'], $context['_key'], $context['product'], $context['_parent'], $context['loop']);
         $context = array_intersect_key($context, $_parent) + $_parent;
-        // line 37
-        echo "        </tbody>
-    </table>
+        // line 41
+        echo "            </tbody>
+        </table>
+    </div>
 
-    <a href=\"";
-        // line 40
+    <a class=\"btn btn-grad\" href=\"";
+        // line 45
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_product_new");
-        echo "\">Create new</a>
+        echo "\">Ajouter un produit</a>
+</main>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -189,7 +195,7 @@ class __TwigTemplate_5f92768048e7a9fcd6f3076f09e2c17a extends Template
      */
     public function getDebugInfo()
     {
-        return array (  160 => 40,  155 => 37,  146 => 33,  137 => 29,  133 => 28,  128 => 26,  124 => 25,  120 => 24,  116 => 23,  112 => 22,  109 => 21,  104 => 20,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
+        return array (  165 => 45,  159 => 41,  150 => 37,  141 => 33,  137 => 32,  132 => 30,  128 => 29,  124 => 28,  120 => 27,  116 => 26,  113 => 25,  108 => 24,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
@@ -199,42 +205,48 @@ class __TwigTemplate_5f92768048e7a9fcd6f3076f09e2c17a extends Template
 {% block title %}Product index{% endblock %}
 
 {% block body %}
-    <h1>Product index</h1>
+<main class=\"container\">
+    <h1 class=\"text-center mb-4\">Gestion des produits</h1>
 
-    <table class=\"table\">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Title</th>
-                <th>Description</th>
-                <th>Price</th>
-                <th>Quantity</th>
-                <th>actions</th>
-            </tr>
-        </thead>
-        <tbody>
-        {% for product in products %}
-            <tr>
-                <td>{{ product.id }}</td>
-                <td>{{ product.title }}</td>
-                <td>{{ product.description }}</td>
-                <td>{{ product.price }}</td>
-                <td>{{ product.quantity }}</td>
-                <td>
-                    <a href=\"{{ path('app_product_show', {'id': product.id}) }}\">show</a>
-                    <a href=\"{{ path('app_product_edit', {'id': product.id}) }}\">edit</a>
-                </td>
-            </tr>
-        {% else %}
-            <tr>
-                <td colspan=\"6\">no records found</td>
-            </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+    <div class=\"table-responsive\">
+        <table class=\"table table-bordered table-striped\">
 
-    <a href=\"{{ path('app_product_new') }}\">Create new</a>
+            <thead class=\"thead-dark\">
+
+                <tr>
+                    <th scope=\"col\">ID</th>
+                    <th scope=\"col\">Titre</th>
+                    <th scope=\"col\">Description</th>
+                    <th scope=\"col\">Prix</th>
+                    <th scope=\"col\">Quantité</th>
+                    <th scope=\"col\">Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            {% for product in products %}
+                <tr>
+                    <td>{{ product.id }}</td>
+                    <td>{{ product.title }}</td>
+                    <td>{{ product.description }}</td>
+                    <td>{{ product.price }}</td>
+                    <td>{{ product.quantity }}</td>
+                    <td>
+                        <a class=\"btn btn-grad btn-sm\" href=\"{{ path('app_product_show', {'id': product.id}) }}\">Voir</a>
+                        <a class=\"btn btn-grad btn-sm\" href=\"{{ path('app_product_edit', {'id': product.id}) }}\">Modifier</a>
+                    </td>
+                </tr>
+            {% else %}
+                <tr>
+                    <td colspan=\"6\" class=\"text-center\">Aucun enregistrement trouvé</td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <a class=\"btn btn-grad\" href=\"{{ path('app_product_new') }}\">Ajouter un produit</a>
+</main>
 {% endblock %}
-", "product/index.html.twig", "C:\\Users\\utilisateur\\Desktop\\projetGroupe3\\hero_hideout\\templates\\product\\index.html.twig");
+", "product/index.html.twig", "C:\\Users\\utilisateur\\Downloads\\hero_hideout\\templates\\product\\index.html.twig");
     }
 }
