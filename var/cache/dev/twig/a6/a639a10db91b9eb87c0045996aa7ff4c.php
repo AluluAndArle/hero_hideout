@@ -252,6 +252,6 @@ class __TwigTemplate_6c96757eb90035b693b651cfebcefcd5 extends Template
         </div>
     </div>
 {% endblock %}
-", "@WebProfiler/Profiler/toolbar_redirect.html.twig", "C:\\Users\\utilisateur\\Downloads\\symfony\\HeroHideout\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\toolbar_redirect.html.twig");
+", "@WebProfiler/Profiler/toolbar_redirect.html.twig", "C:\\Users\\utilisateur\\Desktop\\projetGroupe3\\hero_hideout\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\toolbar_redirect.html.twig");
     }
 }

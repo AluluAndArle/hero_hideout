@@ -602,6 +602,6 @@ class __TwigTemplate_1e5db828090d9b70765b67f7fd7e4349 extends Template
         </div>
     {% endif %}
 {% endblock %}
-", "@WebProfiler/Collector/twig.html.twig", "C:\\Users\\utilisateur\\Downloads\\symfony\\HeroHideout\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\twig.html.twig");
+", "@WebProfiler/Collector/twig.html.twig", "C:\\Users\\utilisateur\\Desktop\\projetGroupe3\\hero_hideout\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\twig.html.twig");
     }
 }

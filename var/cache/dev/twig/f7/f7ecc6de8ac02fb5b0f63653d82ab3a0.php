@@ -65,8 +65,7 @@ class __TwigTemplate_5f92768048e7a9fcd6f3076f09e2c17a extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "title"));
 
-        echo "Produits
-";
+        echo "Product index";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -75,7 +74,7 @@ class __TwigTemplate_5f92768048e7a9fcd6f3076f09e2c17a extends Template
 
     }
 
-    // line 6
+    // line 5
     public function block_body($context, array $blocks = [])
     {
         $macros = $this->macros;
@@ -85,10 +84,81 @@ class __TwigTemplate_5f92768048e7a9fcd6f3076f09e2c17a extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "body"));
 
-        // line 7
-        echo "\t<main>
-\t\t<h1>Produits</h1>
-\t</main>
+        // line 6
+        echo "    <h1>Product index</h1>
+
+    <table class=\"table\">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        ";
+        // line 20
+        $context['_parent'] = $context;
+        $context['_seq'] = twig_ensure_traversable((isset($context["products"]) || array_key_exists("products", $context) ? $context["products"] : (function () { throw new RuntimeError('Variable "products" does not exist.', 20, $this->source); })()));
+        $context['_iterated'] = false;
+        foreach ($context['_seq'] as $context["_key"] => $context["product"]) {
+            // line 21
+            echo "            <tr>
+                <td>";
+            // line 22
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "id", [], "any", false, false, false, 22), "html", null, true);
+            echo "</td>
+                <td>";
+            // line 23
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "title", [], "any", false, false, false, 23), "html", null, true);
+            echo "</td>
+                <td>";
+            // line 24
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "description", [], "any", false, false, false, 24), "html", null, true);
+            echo "</td>
+                <td>";
+            // line 25
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "price", [], "any", false, false, false, 25), "html", null, true);
+            echo "</td>
+                <td>";
+            // line 26
+            echo twig_escape_filter($this->env, twig_get_attribute($this->env, $this->source, $context["product"], "quantity", [], "any", false, false, false, 26), "html", null, true);
+            echo "</td>
+                <td>
+                    <a href=\"";
+            // line 28
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_product_show", ["id" => twig_get_attribute($this->env, $this->source, $context["product"], "id", [], "any", false, false, false, 28)]), "html", null, true);
+            echo "\">show</a>
+                    <a href=\"";
+            // line 29
+            echo twig_escape_filter($this->env, $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_product_edit", ["id" => twig_get_attribute($this->env, $this->source, $context["product"], "id", [], "any", false, false, false, 29)]), "html", null, true);
+            echo "\">edit</a>
+                </td>
+            </tr>
+        ";
+            $context['_iterated'] = true;
+        }
+        if (!$context['_iterated']) {
+            // line 33
+            echo "            <tr>
+                <td colspan=\"6\">no records found</td>
+            </tr>
+        ";
+        }
+        $_parent = $context['_parent'];
+        unset($context['_seq'], $context['_iterated'], $context['_key'], $context['product'], $context['_parent'], $context['loop']);
+        $context = array_intersect_key($context, $_parent) + $_parent;
+        // line 37
+        echo "        </tbody>
+    </table>
+
+    <a href=\"";
+        // line 40
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_product_new");
+        echo "\">Create new</a>
 ";
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
@@ -119,21 +189,52 @@ class __TwigTemplate_5f92768048e7a9fcd6f3076f09e2c17a extends Template
      */
     public function getDebugInfo()
     {
-        return array (  89 => 7,  79 => 6,  59 => 3,  36 => 1,);
+        return array (  160 => 40,  155 => 37,  146 => 33,  137 => 29,  133 => 28,  128 => 26,  124 => 25,  120 => 24,  116 => 23,  112 => 22,  109 => 21,  104 => 20,  88 => 6,  78 => 5,  59 => 3,  36 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("{% extends 'base.html.twig' %}
 
-{% block title %}Produits
-{% endblock %}
+{% block title %}Product index{% endblock %}
 
 {% block body %}
-\t<main>
-\t\t<h1>Produits</h1>
-\t</main>
+    <h1>Product index</h1>
+
+    <table class=\"table\">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for product in products %}
+            <tr>
+                <td>{{ product.id }}</td>
+                <td>{{ product.title }}</td>
+                <td>{{ product.description }}</td>
+                <td>{{ product.price }}</td>
+                <td>{{ product.quantity }}</td>
+                <td>
+                    <a href=\"{{ path('app_product_show', {'id': product.id}) }}\">show</a>
+                    <a href=\"{{ path('app_product_edit', {'id': product.id}) }}\">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan=\"6\">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href=\"{{ path('app_product_new') }}\">Create new</a>
 {% endblock %}
-", "product/index.html.twig", "C:\\Users\\utilisateur\\Downloads\\symfony\\HeroHideout\\templates\\product\\index.html.twig");
+", "product/index.html.twig", "C:\\Users\\utilisateur\\Desktop\\projetGroupe3\\hero_hideout\\templates\\product\\index.html.twig");
     }
 }

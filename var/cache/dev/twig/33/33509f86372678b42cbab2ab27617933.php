@@ -361,6 +361,6 @@ class __TwigTemplate_7c725c60fc59325e072f22c27f6b30cc extends Template
         </div>
     </form>
 </div>
-", "@WebProfiler/Profiler/search.html.twig", "C:\\Users\\utilisateur\\Downloads\\symfony\\HeroHideout\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\search.html.twig");
+", "@WebProfiler/Profiler/search.html.twig", "C:\\Users\\utilisateur\\Desktop\\projetGroupe3\\hero_hideout\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Profiler\\search.html.twig");
     }
 }

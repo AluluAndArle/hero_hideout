@@ -55,10 +55,7 @@ class __TwigTemplate_538c58d6414d90797f5c7e6bb9dc6830 extends Template
 
           <div class=\"col-md-2\">
             <h6 class=\"text-uppercase font-weight-bold\">
-              <a href=\"";
-        // line 13
-        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_products");
-        echo "\" class=\"text-white\">Produits</a>
+
             </h6>
           </div>
 
@@ -148,7 +145,7 @@ class __TwigTemplate_538c58d6414d90797f5c7e6bb9dc6830 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  60 => 13,  51 => 7,  43 => 1,);
+        return array (  51 => 7,  43 => 1,);
     }
 
     public function getSourceContext()
@@ -165,7 +162,7 @@ class __TwigTemplate_538c58d6414d90797f5c7e6bb9dc6830 extends Template
 
           <div class=\"col-md-2\">
             <h6 class=\"text-uppercase font-weight-bold\">
-              <a href=\"{{path('app_products')}}\" class=\"text-white\">Produits</a>
+
             </h6>
           </div>
 
@@ -225,6 +222,6 @@ class __TwigTemplate_538c58d6414d90797f5c7e6bb9dc6830 extends Template
          >Hero-Hideout</a
         >
     </div>
-  </footer>", "partials/_footer.html.twig", "C:\\Users\\utilisateur\\Downloads\\symfony\\HeroHideout\\templates\\partials\\_footer.html.twig");
+  </footer>", "partials/_footer.html.twig", "C:\\Users\\utilisateur\\Desktop\\projetGroupe3\\hero_hideout\\templates\\partials\\_footer.html.twig");
     }
 }

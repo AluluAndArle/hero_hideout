@@ -989,6 +989,6 @@ $context["call"], "return", [], "any", false, false, false, 294) === false)) {
         </menu>
     </dialog>
 {% endblock %}
-", "@WebProfiler/Collector/workflow.html.twig", "C:\\Users\\utilisateur\\Downloads\\symfony\\HeroHideout\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\workflow.html.twig");
+", "@WebProfiler/Collector/workflow.html.twig", "C:\\Users\\utilisateur\\Desktop\\projetGroupe3\\hero_hideout\\vendor\\symfony\\web-profiler-bundle\\Resources\\views\\Collector\\workflow.html.twig");
     }
 }
