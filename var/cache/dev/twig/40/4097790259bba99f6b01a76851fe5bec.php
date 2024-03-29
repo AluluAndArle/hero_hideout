@@ -28,7 +28,6 @@ class __TwigTemplate_01eb40a8dcb49e3e040fea28489d1c02 extends Template
 
         $this->blocks = [
             'title' => [$this, 'block_title'],
-            'stylesheets' => [$this, 'block_stylesheets'],
             'javascripts' => [$this, 'block_javascripts'],
             'importmap' => [$this, 'block_importmap'],
             'body' => [$this, 'block_body'],
@@ -55,11 +54,8 @@ class __TwigTemplate_01eb40a8dcb49e3e040fea28489d1c02 extends Template
         $this->displayBlock('title', $context, $blocks);
         // line 8
         echo "\t\t</title>
-\t\t<link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>\"> ";
-        // line 9
-        $this->displayBlock('stylesheets', $context, $blocks);
-        // line 10
-        echo "\t\t<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css\">
+\t\t<link rel=\"icon\" href=\"https://i.ibb.co/Yh04Xs0/H-2-removebg-preview.png\" type=\"image/x-icon\">
+\t\t<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css\">
 \t\t<link href=\"https://fonts.cdnfonts.com/css/theano-modern\" rel=\"stylesheet\">
 \t\t<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css\" integrity=\"sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==\" crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\" />
 \t\t";
@@ -67,7 +63,7 @@ class __TwigTemplate_01eb40a8dcb49e3e040fea28489d1c02 extends Template
         $this->displayBlock('javascripts', $context, $blocks);
         // line 18
         echo "\t</head>
-\t<body>
+\t<body class=\"fadeIn\">
 \t\t";
         // line 20
         $this->loadTemplate("partials/_nav.html.twig", "base.html.twig", 20)->display($context);
@@ -101,24 +97,6 @@ class __TwigTemplate_01eb40a8dcb49e3e040fea28489d1c02 extends Template
 
         echo "Welcome!
 \t\t\t";
-        
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
-
-        
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
-
-    }
-
-    // line 9
-    public function block_stylesheets($context, array $blocks = [])
-    {
-        $macros = $this->macros;
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2 = $this->extensions["Symfony\\Bundle\\WebProfilerBundle\\Twig\\WebProfilerExtension"];
-        $__internal_5a27a8ba21ca79b61932376b2fa922d2->enter($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
-
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f = $this->extensions["Symfony\\Bridge\\Twig\\Extension\\ProfilerExtension"];
-        $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "block", "stylesheets"));
-
         
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->leave($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof);
 
@@ -212,7 +190,7 @@ class __TwigTemplate_01eb40a8dcb49e3e040fea28489d1c02 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  177 => 21,  164 => 15,  154 => 14,  144 => 17,  141 => 14,  131 => 13,  113 => 9,  93 => 6,  81 => 23,  78 => 22,  75 => 21,  73 => 20,  69 => 18,  67 => 13,  62 => 10,  60 => 9,  57 => 8,  55 => 6,  48 => 1,);
+        return array (  155 => 21,  142 => 15,  132 => 14,  122 => 17,  119 => 14,  109 => 13,  89 => 6,  77 => 23,  74 => 22,  71 => 21,  69 => 20,  65 => 18,  63 => 13,  56 => 8,  54 => 6,  47 => 1,);
     }
 
     public function getSourceContext()
@@ -225,7 +203,7 @@ class __TwigTemplate_01eb40a8dcb49e3e040fea28489d1c02 extends Template
 \t\t\t{% block title %}Welcome!
 \t\t\t{% endblock %}
 \t\t</title>
-\t\t<link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>\"> {% block stylesheets %}{% endblock %}
+\t\t<link rel=\"icon\" href=\"https://i.ibb.co/Yh04Xs0/H-2-removebg-preview.png\" type=\"image/x-icon\">
 \t\t<link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css\">
 \t\t<link href=\"https://fonts.cdnfonts.com/css/theano-modern\" rel=\"stylesheet\">
 \t\t<link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css\" integrity=\"sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==\" crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\" />
@@ -235,12 +213,12 @@ class __TwigTemplate_01eb40a8dcb49e3e040fea28489d1c02 extends Template
 \t\t\t{% endblock %}
 \t\t{% endblock %}
 \t</head>
-\t<body>
+\t<body class=\"fadeIn\">
 \t\t{% include \"partials/_nav.html.twig\" %}
 \t\t{% block body %}{% endblock %}
 \t\t{% include \"partials/_footer.html.twig\" %}
 \t</body>
 </html>
-", "base.html.twig", "C:\\Users\\utilisateur\\Downloads\\hero_hideout\\templates\\base.html.twig");
+", "base.html.twig", "C:\\Users\\utilisateur\\Downloads\\hero_hideout-main\\hero_hideout-main\\hero_hideout-main\\templates\\base.html.twig");
     }
 }

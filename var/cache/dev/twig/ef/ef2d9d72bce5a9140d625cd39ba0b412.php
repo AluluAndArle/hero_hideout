@@ -88,7 +88,7 @@ class __TwigTemplate_7bb471276db2195910c091e056b84c80 extends Template
         // line 7
         echo "\t<main>
 
-<div class=\"card text-start m-5 p-4 border-1 border-secondary\">
+<div class=\"card text-start m-5 p-4\">
     <div class=\"card-body text-center\">
         <h2 class=\"card-title\">Bienvenue sur Hero Hideout!</h2>
     <a class=\"btn btn-grad\" href=\"";
@@ -143,7 +143,7 @@ class __TwigTemplate_7bb471276db2195910c091e056b84c80 extends Template
 {% block body %}
 \t<main>
 
-<div class=\"card text-start m-5 p-4 border-1 border-secondary\">
+<div class=\"card text-start m-5 p-4\">
     <div class=\"card-body text-center\">
         <h2 class=\"card-title\">Bienvenue sur Hero Hideout!</h2>
     <a class=\"btn btn-grad\" href=\"{{path('app_product')}}\">Voir les produits</a>
@@ -153,6 +153,6 @@ class __TwigTemplate_7bb471276db2195910c091e056b84c80 extends Template
 
 \t</main>
 {% endblock %}
-", "home/index.html.twig", "C:\\Users\\utilisateur\\Downloads\\hero_hideout\\templates\\home\\index.html.twig");
+", "home/index.html.twig", "C:\\Users\\utilisateur\\Downloads\\hero_hideout-main\\hero_hideout-main\\hero_hideout-main\\templates\\home\\index.html.twig");
     }
 }

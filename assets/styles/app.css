@@ -10,7 +10,11 @@ nav a,li{
 }
 
 footer{
+    height:200px;    
     background:#f17312;
+    position:fixed;
+    bottom:0px;
+    width:100%;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px 3px 0px inset;
 }
 
@@ -47,21 +51,40 @@ body {
     background-size:cover;
     background-repeat: no-repeat;
     font-family: 'Theano Modern', sans-serif;
+    height:100vh;
 }
 
 main{
-    height:500px;
+    height:80vh;
     width:100%;
     margin-top:100px;
     text-align:center;
 }
 
+    .center-page {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
 .card{
     border-radius: 35px 35px 35px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.login{
+    width: 50%;
+    height:350px;
+    margin:auto;
+}
+
+.register{
+    height:350px;
+    margin:auto;
 }
 
 .marginLeft{
-    margin-left:330px;
+    margin-left:220px;
 }
 
 .cardHover{
@@ -83,8 +106,8 @@ main{
     transition: 0.5s;
     background-size: 200% auto;
     color: white;            
-    box-shadow: 0 0 20px #eee;
     border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   }
 
   .btn-grad:hover {
@@ -93,3 +116,5 @@ main{
     text-decoration: none;
   }
  
+
+  

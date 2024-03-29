@@ -41,88 +41,92 @@ class __TwigTemplate_2c37e10738b1c9f42214e8f2ca2b5664 extends Template
 
         // line 1
         echo "<nav class=\"navbar navbar-expand-lg fixed-top navbar-scroll\">
-  <div class=\"container\">
-   <a href=\"";
+\t<div class=\"container\">
+\t\t<a href=\"";
         // line 3
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_home");
-        echo "\"><img src=\"https://i.ibb.co/Yh04Xs0/H-2-removebg-preview.png\" height=\"150\" alt=\"\"
-      loading=\"lazy\" /></a>
-    <button class=\"navbar-toggler ps-0\" type=\"button\" data-mdb-toggle=\"collapse\" data-mdb-target=\"#navbarExample01\"
-      aria-controls=\"navbarExample01\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
-      <span class=\"navbar-toggler-icon d-flex justify-content-start align-items-center\">
-        <i class=\"fas fa-bars\"></i>
-      </span>
-    </button>
-    <div class=\"collapse navbar-collapse\" id=\"navbarExample01\">
-      
-      <ul class=\"navbar-nav ms-auto mb-2 mb-lg-0\">
-        <li class=\"nav-item active\">
-          <a class=\"nav-link mt-1\" aria-current=\"page\" href=\"";
-        // line 15
+        echo "\"><img src=\"https://i.ibb.co/Yh04Xs0/H-2-removebg-preview.png\" height=\"150\" alt=\"\" loading=\"lazy\"/></a>
+\t\t<button class=\"navbar-toggler ps-0\" type=\"button\" data-mdb-toggle=\"collapse\" data-mdb-target=\"#navbarExample01\" aria-controls=\"navbarExample01\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+\t\t\t<span class=\"navbar-toggler-icon d-flex justify-content-start align-items-center\">
+\t\t\t\t<i class=\"fas fa-bars\"></i>
+\t\t\t</span>
+\t\t</button>
+\t\t<div class=\"collapse navbar-collapse\" id=\"navbarExample01\">
+\t\t\t<ul class=\"navbar-nav ms-auto mb-2 mb-lg-0\">
+\t\t\t\t<li class=\"nav-item active\">
+\t\t\t\t\t<a class=\"nav-link mt-1\" aria-current=\"page\" href=\"";
+        // line 12
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_home");
         echo "\">Accueil</a>
-        </li>
-                <li class=\"nav-item active\">
-          <a class=\"nav-link mt-1\" aria-current=\"page\" href=\"";
+\t\t\t\t</li>
+\t\t\t\t<li class=\"nav-item active\">
+\t\t\t\t\t<a class=\"nav-link mt-1\" aria-current=\"page\" href=\"";
+        // line 15
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_mention");
+        echo "\">Mentions</a>
+\t\t\t\t</li>
+\t\t\t\t<li class=\"nav-item active\">
+\t\t\t\t\t<a class=\"nav-link mt-1\" aria-current=\"page\" href=\"";
         // line 18
         echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_product");
         echo "\">Produits</a>
-        </li>
-       
+\t\t\t\t</li>
 
-
-
-            ";
-        // line 24
+\t\t\t\t";
+        // line 21
         if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN")) {
-            // line 25
-            echo "                <li class=\"nav-item\">
-                     <a class=\"nav-link mt-1\" href=\"";
-            // line 26
+            // line 22
+            echo "
+\t\t\t\t\t<li class=\"nav-item\">
+\t\t\t\t\t\t<a class=\"nav-link mt-1\" href=\"";
+            // line 24
             echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_product_index");
             echo "\">Gestion produits</a>
-                </li>
-                 ";
-            // line 28
-            if ($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_USER")) {
-                // line 29
-                echo "        <li class=\"nav-item\">
-            <a class=\"btn btn-grad\" href=\"";
-                // line 30
-                echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
-                echo "\">Logout</a>
-        </li>
-        ";
-            }
+\t\t\t\t\t</li>
+\t\t\t\t";
+        }
+        // line 27
+        echo "
+\t\t\t\t";
+        // line 28
+        if (($this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_ADMIN") || $this->extensions['Symfony\Bridge\Twig\Extension\SecurityExtension']->isGranted("ROLE_USER"))) {
+            // line 29
+            echo "\t\t\t\t\t<li class=\"nav-item active\">
+\t\t\t\t\t\t<a class=\"btn btn-grad\" aria-current=\"page\" href=\"";
+            // line 30
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_profile");
+            echo "\">Profil</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item\">
+\t\t\t\t\t\t<a class=\"btn btn-grad\" href=\"";
             // line 33
-            echo "        
-        ";
-        } else {
-            // line 35
-            echo "        <li class=\"nav-item marginLeft\">
-          <a class=\"btn btn-grad\" aria-current=\"page\" href=\"";
-            // line 36
-            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
-            echo "\">Login</a>
-        </li>
-        <li class=\"nav-item\">
-            <a class=\" btn btn-grad\" href=\"";
-            // line 39
-            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
-            echo "\">Register</a>
-        </li> 
-       
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_logout");
+            echo "\">Déconnexion</a>
+\t\t\t\t\t</li>
 
-        ";
+\t\t\t\t";
+        } else {
+            // line 37
+            echo "\t\t\t\t\t<li class=\"nav-item marginLeft\">
+\t\t\t\t\t\t<a class=\"btn btn-grad\" aria-current=\"page\" href=\"";
+            // line 38
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_login");
+            echo "\">Connexion</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item\">
+\t\t\t\t\t\t<a class=\" btn btn-grad\" href=\"";
+            // line 41
+            echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_register");
+            echo "\">Inscription</a>
+\t\t\t\t\t</li>
+\t\t\t\t";
         }
         // line 44
-        echo "
-
-      </ul>
-
-    </div>
-  </div>
-</nav>";
+        echo "\t\t\t</ul>
+\t\t</div>
+\t</div>
+</nav>
+";
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
 
@@ -152,60 +156,58 @@ class __TwigTemplate_2c37e10738b1c9f42214e8f2ca2b5664 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  119 => 44,  111 => 39,  105 => 36,  102 => 35,  98 => 33,  92 => 30,  89 => 29,  87 => 28,  82 => 26,  79 => 25,  77 => 24,  68 => 18,  62 => 15,  47 => 3,  43 => 1,);
+        return array (  125 => 44,  119 => 41,  113 => 38,  110 => 37,  103 => 33,  97 => 30,  94 => 29,  92 => 28,  89 => 27,  83 => 24,  79 => 22,  77 => 21,  71 => 18,  65 => 15,  59 => 12,  47 => 3,  43 => 1,);
     }
 
     public function getSourceContext()
     {
         return new Source("<nav class=\"navbar navbar-expand-lg fixed-top navbar-scroll\">
-  <div class=\"container\">
-   <a href=\"{{path('app_home')}}\"><img src=\"https://i.ibb.co/Yh04Xs0/H-2-removebg-preview.png\" height=\"150\" alt=\"\"
-      loading=\"lazy\" /></a>
-    <button class=\"navbar-toggler ps-0\" type=\"button\" data-mdb-toggle=\"collapse\" data-mdb-target=\"#navbarExample01\"
-      aria-controls=\"navbarExample01\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
-      <span class=\"navbar-toggler-icon d-flex justify-content-start align-items-center\">
-        <i class=\"fas fa-bars\"></i>
-      </span>
-    </button>
-    <div class=\"collapse navbar-collapse\" id=\"navbarExample01\">
-      
-      <ul class=\"navbar-nav ms-auto mb-2 mb-lg-0\">
-        <li class=\"nav-item active\">
-          <a class=\"nav-link mt-1\" aria-current=\"page\" href=\"{{path('app_home')}}\">Accueil</a>
-        </li>
-                <li class=\"nav-item active\">
-          <a class=\"nav-link mt-1\" aria-current=\"page\" href=\"{{path('app_product')}}\">Produits</a>
-        </li>
-       
+\t<div class=\"container\">
+\t\t<a href=\"{{ path('app_home') }}\"><img src=\"https://i.ibb.co/Yh04Xs0/H-2-removebg-preview.png\" height=\"150\" alt=\"\" loading=\"lazy\"/></a>
+\t\t<button class=\"navbar-toggler ps-0\" type=\"button\" data-mdb-toggle=\"collapse\" data-mdb-target=\"#navbarExample01\" aria-controls=\"navbarExample01\" aria-expanded=\"false\" aria-label=\"Toggle navigation\">
+\t\t\t<span class=\"navbar-toggler-icon d-flex justify-content-start align-items-center\">
+\t\t\t\t<i class=\"fas fa-bars\"></i>
+\t\t\t</span>
+\t\t</button>
+\t\t<div class=\"collapse navbar-collapse\" id=\"navbarExample01\">
+\t\t\t<ul class=\"navbar-nav ms-auto mb-2 mb-lg-0\">
+\t\t\t\t<li class=\"nav-item active\">
+\t\t\t\t\t<a class=\"nav-link mt-1\" aria-current=\"page\" href=\"{{ path('app_home') }}\">Accueil</a>
+\t\t\t\t</li>
+\t\t\t\t<li class=\"nav-item active\">
+\t\t\t\t\t<a class=\"nav-link mt-1\" aria-current=\"page\" href=\"{{ path('app_mention') }}\">Mentions</a>
+\t\t\t\t</li>
+\t\t\t\t<li class=\"nav-item active\">
+\t\t\t\t\t<a class=\"nav-link mt-1\" aria-current=\"page\" href=\"{{ path('app_product') }}\">Produits</a>
+\t\t\t\t</li>
 
+\t\t\t\t{% if is_granted('ROLE_ADMIN') %}
 
+\t\t\t\t\t<li class=\"nav-item\">
+\t\t\t\t\t\t<a class=\"nav-link mt-1\" href=\"{{ path('app_product_index') }}\">Gestion produits</a>
+\t\t\t\t\t</li>
+\t\t\t\t{% endif %}
 
-            {% if is_granted('ROLE_ADMIN') %}
-                <li class=\"nav-item\">
-                     <a class=\"nav-link mt-1\" href=\"{{path('app_product_index')}}\">Gestion produits</a>
-                </li>
-                 {% if is_granted('ROLE_USER') %}
-        <li class=\"nav-item\">
-            <a class=\"btn btn-grad\" href=\"{{path('app_logout')}}\">Logout</a>
-        </li>
-        {% endif %}
-        
-        {% else %}
-        <li class=\"nav-item marginLeft\">
-          <a class=\"btn btn-grad\" aria-current=\"page\" href=\"{{path('app_login')}}\">Login</a>
-        </li>
-        <li class=\"nav-item\">
-            <a class=\" btn btn-grad\" href=\"{{path('app_register')}}\">Register</a>
-        </li> 
-       
+\t\t\t\t{% if is_granted('ROLE_ADMIN') or is_granted('ROLE_USER') %}
+\t\t\t\t\t<li class=\"nav-item active\">
+\t\t\t\t\t\t<a class=\"btn btn-grad\" aria-current=\"page\" href=\"{{ path('app_profile') }}\">Profil</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item\">
+\t\t\t\t\t\t<a class=\"btn btn-grad\" href=\"{{ path('app_logout') }}\">Déconnexion</a>
+\t\t\t\t\t</li>
 
-        {% endif %}
-
-
-      </ul>
-
-    </div>
-  </div>
-</nav>", "partials/_nav.html.twig", "C:\\Users\\utilisateur\\Downloads\\hero_hideout\\templates\\partials\\_nav.html.twig");
+\t\t\t\t{% else %}
+\t\t\t\t\t<li class=\"nav-item marginLeft\">
+\t\t\t\t\t\t<a class=\"btn btn-grad\" aria-current=\"page\" href=\"{{ path('app_login') }}\">Connexion</a>
+\t\t\t\t\t</li>
+\t\t\t\t\t<li class=\"nav-item\">
+\t\t\t\t\t\t<a class=\" btn btn-grad\" href=\"{{ path('app_register') }}\">Inscription</a>
+\t\t\t\t\t</li>
+\t\t\t\t{% endif %}
+\t\t\t</ul>
+\t\t</div>
+\t</div>
+</nav>
+", "partials/_nav.html.twig", "C:\\Users\\utilisateur\\Downloads\\hero_hideout-main\\hero_hideout-main\\hero_hideout-main\\templates\\partials\\_nav.html.twig");
     }
 }

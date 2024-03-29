@@ -40,10 +40,10 @@ class __TwigTemplate_538c58d6414d90797f5c7e6bb9dc6830 extends Template
         $__internal_6f47bbe9983af81f1e7450e9a3e3768f->enter($__internal_6f47bbe9983af81f1e7450e9a3e3768f_prof = new \Twig\Profiler\Profile($this->getTemplateName(), "template", "partials/_footer.html.twig"));
 
         // line 1
-        echo "  <footer class=\"text-center text-white fixed-bottom\">
+        echo "  <footer class=\"text-center text-white pb-4\">
     <div class=\"container\">
-      <section class=\"mt-5\">
-        <div class=\"row text-center d-flex justify-content-center\">
+      <section>
+        <div class=\"row text-center d-flex justify-content-center pt-5\">
           <div class=\"col-md-2\">
             <h6 class=\"text-uppercase font-weight-bold\">
               <a href=\"";
@@ -54,12 +54,18 @@ class __TwigTemplate_538c58d6414d90797f5c7e6bb9dc6830 extends Template
           </div>
           <div class=\"col-md-2\">
             <h6 class=\"text-uppercase font-weight-bold\">
-              <a href=\"#!\" class=\"text-white\">Produits</a>
+              <a href=\"";
+        // line 12
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_product");
+        echo "\" class=\"text-white\">Produits</a>
             </h6>
           </div>
           <div class=\"col-md-2\">
             <h6 class=\"text-uppercase font-weight-bold\">
-              <a href=\"#!\" class=\"text-white\">Mentions</a>
+              <a href=\"";
+        // line 17
+        echo $this->extensions['Symfony\Bridge\Twig\Extension\RoutingExtension']->getPath("app_mention");
+        echo "\" class=\"text-white\">Mention</a>
             </h6>
           </div>
 
@@ -88,15 +94,6 @@ class __TwigTemplate_538c58d6414d90797f5c7e6bb9dc6830 extends Template
       </section>
     </div>
 
-    <div
-         class=\"text-center p-3\"
-         style=\"background-color: rgba(0, 0, 0, 0.2)\"
-         >
-      © 2024 Copyright:
-      <a class=\"text-white\" href=\"#\"
-         >Hero-Hideout</a
-        >
-    </div>
   </footer>";
         
         $__internal_5a27a8ba21ca79b61932376b2fa922d2->leave($__internal_5a27a8ba21ca79b61932376b2fa922d2_prof);
@@ -127,15 +124,15 @@ class __TwigTemplate_538c58d6414d90797f5c7e6bb9dc6830 extends Template
      */
     public function getDebugInfo()
     {
-        return array (  51 => 7,  43 => 1,);
+        return array (  67 => 17,  59 => 12,  51 => 7,  43 => 1,);
     }
 
     public function getSourceContext()
     {
-        return new Source("  <footer class=\"text-center text-white fixed-bottom\">
+        return new Source("  <footer class=\"text-center text-white pb-4\">
     <div class=\"container\">
-      <section class=\"mt-5\">
-        <div class=\"row text-center d-flex justify-content-center\">
+      <section>
+        <div class=\"row text-center d-flex justify-content-center pt-5\">
           <div class=\"col-md-2\">
             <h6 class=\"text-uppercase font-weight-bold\">
               <a href=\"{{path('app_home')}}\" class=\"text-white\">Accueil</a>
@@ -143,12 +140,12 @@ class __TwigTemplate_538c58d6414d90797f5c7e6bb9dc6830 extends Template
           </div>
           <div class=\"col-md-2\">
             <h6 class=\"text-uppercase font-weight-bold\">
-              <a href=\"#!\" class=\"text-white\">Produits</a>
+              <a href=\"{{path('app_product')}}\" class=\"text-white\">Produits</a>
             </h6>
           </div>
           <div class=\"col-md-2\">
             <h6 class=\"text-uppercase font-weight-bold\">
-              <a href=\"#!\" class=\"text-white\">Mentions</a>
+              <a href=\"{{path('app_mention')}}\" class=\"text-white\">Mention</a>
             </h6>
           </div>
 
@@ -177,15 +174,6 @@ class __TwigTemplate_538c58d6414d90797f5c7e6bb9dc6830 extends Template
       </section>
     </div>
 
-    <div
-         class=\"text-center p-3\"
-         style=\"background-color: rgba(0, 0, 0, 0.2)\"
-         >
-      © 2024 Copyright:
-      <a class=\"text-white\" href=\"#\"
-         >Hero-Hideout</a
-        >
-    </div>
-  </footer>", "partials/_footer.html.twig", "C:\\Users\\utilisateur\\Downloads\\hero_hideout\\templates\\partials\\_footer.html.twig");
+  </footer>", "partials/_footer.html.twig", "C:\\Users\\utilisateur\\Downloads\\hero_hideout-main\\hero_hideout-main\\hero_hideout-main\\templates\\partials\\_footer.html.twig");
     }
 }

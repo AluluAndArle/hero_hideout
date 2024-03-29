@@ -33,7 +33,7 @@ class RegistrationController extends AbstractController
 
             $entityManager->persist($user);
             $entityManager->flush();
-
+            header('Location: /');
             // do anything else you need here, like send an email
 
             return $security->login($user, EmailAuthenticator::class, 'main');

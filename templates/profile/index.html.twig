@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello ProfileController!
+{% endblock %}
+
+{% block body %}
+	<main>
+		<div class="container py-5 h-100">
+			<div class="row d-flex justify-content-center align-items-center">
+				<div class="col col-lg-6 mb-4 mb-lg-0">
+					<div class="card mb-3" style="border-radius: .5rem;">
+						<div class="card-header">
+							<h1>Profil</h1>
+						</div>
+
+						<div class="row g-0">
+							<div class="col-md-4 gradient-custom text-center text-white text-dark">
+								<img src="https://www.hotelbooqi.com/wp-content/uploads/2021/12/128-1280406_view-user-icon-png-user-circle-icon-png.png" alt="Avatar" class="img-fluid my-5" style="width: 80px;"/>
+								<i class="far fa-edit mb-5"></i>
+							</div>
+							<div class="col-md-8">
+								<div class="card-body p-4">
+									<h5>Information</h5>
+									<hr class="mt-0 mb-4">
+									<div class="row pt-2">
+										<div class="col-6 mb-3">
+											<h6>Email:</h6>
+											<p class="text-muted">{{ app.user.email }}</p>
+										</div>
+										<div class="col-6 mb-5">
+											<h6>Tel:</h6>
+											<p class="text-muted">+33 14567849</p>
+										</div>
+									</div>
+																	<hr>
+								<a href="{{path('app_home')}}" class="btn btn-grad">Retour à l'accueil</a>
+
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</main>
+{% endblock %}
