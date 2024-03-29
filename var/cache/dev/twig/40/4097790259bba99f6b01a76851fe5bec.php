@@ -63,7 +63,7 @@ class __TwigTemplate_01eb40a8dcb49e3e040fea28489d1c02 extends Template
         $this->displayBlock('javascripts', $context, $blocks);
         // line 18
         echo "\t</head>
-\t<body class=\"fadeIn\">
+\t<body>
 \t\t";
         // line 20
         $this->loadTemplate("partials/_nav.html.twig", "base.html.twig", 20)->display($context);
@@ -213,12 +213,12 @@ class __TwigTemplate_01eb40a8dcb49e3e040fea28489d1c02 extends Template
 \t\t\t{% endblock %}
 \t\t{% endblock %}
 \t</head>
-\t<body class=\"fadeIn\">
+\t<body>
 \t\t{% include \"partials/_nav.html.twig\" %}
 \t\t{% block body %}{% endblock %}
 \t\t{% include \"partials/_footer.html.twig\" %}
 \t</body>
 </html>
-", "base.html.twig", "C:\\Users\\utilisateur\\Downloads\\hero_hideout-main\\hero_hideout-main\\hero_hideout-main\\templates\\base.html.twig");
+", "base.html.twig", "C:\\Users\\utilisateur\\Downloads\\hero_hideout\\templates\\base.html.twig");
     }
 }
